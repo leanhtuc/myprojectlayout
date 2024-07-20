@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.course{
+   margin: 50px 100px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container-1{
+   display: flex;
+   justify-content: center;
+}
+.form-group button{
+    background-color: #93C47D;
+    margin: 5px 20px;
+    padding: 0 20px;
+}
+.search{
+    margin: 5px 20px;  
+   
+}
+.search input{
+    width: 250px;
+  
+}
+
+.search button a{
+    background-color: gray;
+    padding: 0  20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.arrange{
+    margin: 5px  20px;
+    
+}
+.arrange select{
+    padding: 0 20px;
+}
+.container-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container-2 table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.container-2 table th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color:#8eb6f8 ;
+    padding: 0 25px;
+}
+.container-2 table tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color:aliceblue ;
+    padding: 0 25px;
+
+}
+.container-3{
+    position: relative;
+}
+.table-default-2{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+
+}
+.table-default-2 table tr td{
+    border: 1px solid black;
+}
+.table-default-2 table tr td a{
+    text-decoration: none;
+}

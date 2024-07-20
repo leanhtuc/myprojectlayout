@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login_page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper_login">
+        <h1>đăng nhập</h1>
+       <form_login action="" class="form_login">
+         <div class="form_login_row">
+         <label  class="form_login__label"  for="name">Email</label>
+         <input class="form_login__input"  type="text" id="email">
+         </div>
+         <div class="form_login_row">
+         <label  class="form_login__label"  for="password">Mật khẩu</label>
+         <input class="form_login__input"  type="password" id="password">
+          </div>
+        </form_login>
+
+       <div class="login_btn">
+   <button class="login" type="button" onclick="handlelogin()">Đăng nhập</button>
+</div>
+</div>
+<script>
+    
+    var accouts = [{ email: "anhtuc90@gmail.com", password: "8888" }, { email: "anhtuc1", password: "8888" }];
+        localStorage.setItem("account", JSON.stringify(accouts));
+
+        function handlelogin() {
+
+            // xử lý login 
+            var _email = document.getElementById("email").value;
+        var _password = document.getElementById("password").value;
+        // bước 2
+        console.log("email", _email);
+        console.log("password", _password);
+        // check tài khoản
+        var checkAccout;// var checkAccout=false
+        for (const item of accouts) {
+            if (item.email == _email && item.password == _password) {
+                var checkAccout = item;// var checkAccout=true
+                alert("Đăng nhập thành công")
+                //lưu thông tin đăng nhập vào localStorege
+                // localStorage.setItem("account-login", _email);// key đặt account-login
+                //gọi đến hàm render ra trang home
+                // nêu thành công chuyển về index.html
+                  window.location.href = "index.html";
+                // renderHomePage() 
+                //gọi đến hàm show ra tên đăng nhập
+                // showUserLogin();
+                break;
+            }
+        }
+        if (!checkAccout) {
+            alert("Sai email hoặc mật khẩu")
+        }
+         
+    }
+        
+          
+          
+       
+</script>
+    
+</body>
+</html>

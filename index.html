@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/login_page.css">
+    <link rel="stylesheet" href="CSS/home_page.css">
+    <link rel="stylesheet" href="CSS/main-table.css">
+    <link rel="stylesheet" href="CSS/course-management.css">
+    <link rel="stylesheet" href="CSS/addcourse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body id="body">
+    <div>
+
+
+    </div>
+
+    <script src="js/render-login-page.js"></script>
+    <script src="js/render-home-page.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/render-dashboard.js"></script>
+    <script src="js/render-course-management.js"></script>
+    <script src="js/render-modal-Addcourse.js"></script>
+    <script>
+        // lấy mảng account trong localstorege nếu có , không thì bằng mảng rỗng
+        var listAccount = JSON.parse(localStorage.getItem("account")) ? JSON.parse(localStorage.getItem("account")) : [];
+    </script>
+
+
+
+</body>
+
+</html

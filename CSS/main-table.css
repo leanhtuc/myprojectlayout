@@ -1,0 +1,21 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content:left;
+    padding:50px 50px;
+    display: block;
+}
+.main table{
+    padding: 2px;
+}
+.main table tr td{
+    padding: 5px 30px;
+
+}
+.main table th{
+    text-align: left;
+}
